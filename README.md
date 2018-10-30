@@ -103,6 +103,10 @@ git status
 ```
 git checkout .
 ```
+なんかpushで403が出た時
+```
+git remote set-url origin https://<username(new)>@github.com/<username(new)>/<repositoryname>.git
+```
 <br>
 
 
