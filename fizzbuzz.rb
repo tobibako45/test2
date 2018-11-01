@@ -68,7 +68,7 @@ while i <= 100
 end
 
 
-
+# upto
 1.upto(100).each do |i|
     if i % 15 == 0
         puts "fizzbuzz"
