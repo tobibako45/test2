@@ -62,19 +62,52 @@ git remote add origin 追加したいリポジトリ
 git remote add origin https://github.com/tobibako45/test2.git
 ```
 <br>
-   
+  
  ## **git push**  
 pushしてネットのサーバーに反映
 ```
- git push origin master
+git push origin master
 ```
 <br>
 
  ## **git branch**  
+## 作成
 新しいブランチを作成する
 ```
 git branch ブランチ名
 ```
+
+## 表示
+ローカルブランチの一覧を表示する
+```
+git branch
+```
+リモートブランチの一覧を表示する
+```
+git branch --remote
+```
+ローカルブランチとリモートブランチの一覧を表示する
+```
+git branch --all
+```
+
+## 削除
+
+マージしたブランチを削除する
+```
+git branch --delete ブランチ名
+```
+マージしたかどうかを問わずに削除する
+```
+git branch -D ブランチ名
+```
+リモートブランチを削除する
+```
+git push --delete origin ブランチ名
+```
+
+
+
 <br>
 
  ## **git checkout**  
@@ -97,6 +130,15 @@ git merge ブランチ名
 git status
 ```
 <br>
+
+ ## **git branch**  
+ローカルブランチの一覧を表示する
+```
+git branch
+```
+
+
+
 
  ## **おれ的便利**  
 編集内容を取り消したい(addする前)
